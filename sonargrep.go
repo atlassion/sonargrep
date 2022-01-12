@@ -56,7 +56,7 @@ func main() {
 	}
 	defer g.Close()
 
-	chl := make(chan []byte, 1000)
+	chl := make(chan []byte, 5000)
 
 	var wg sync.WaitGroup
 	go func() {
